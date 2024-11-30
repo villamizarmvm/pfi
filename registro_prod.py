@@ -46,4 +46,3 @@ def registrar_producto():
     print("Producto registrada con éxito.")
     # Cerrar la conexión
     conexion.close()
-return
