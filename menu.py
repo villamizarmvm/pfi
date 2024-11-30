@@ -1,4 +1,5 @@
-import registro_prod
+import registro_prod, mostrar_prod, buscar_prod
+
 while True:
     print("\n--- Menú de Gestión de Inventario ---")
     print("1. Registrar producto")
@@ -13,7 +14,7 @@ while True:
     if opcion == '1':
         registro_prod.registrar_producto()
     elif opcion == '2':
-        inventario.consultar_producto()
+        buscar_prod.buscar_producto()
     elif opcion == '3':
         inventario.actualizar_producto()
     elif opcion == '4':
@@ -21,7 +22,7 @@ while True:
     elif opcion == '5':
         inventario.listar_productos()
     elif opcion == '6':
-        inventario.reporte_bajo_stock()
+        mostrar_prod.mostrar_productos()
     elif opcion == '7':
         print("Saliendo del sistema...")
         break
