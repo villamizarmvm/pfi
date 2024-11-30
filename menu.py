@@ -1,3 +1,4 @@
+import registro_prod
 while True:
     print("\n--- Menú de Gestión de Inventario ---")
     print("1. Registrar producto")
@@ -10,7 +11,7 @@ while True:
     opcion = input("Seleccione una opción: ")
 
     if opcion == '1':
-        inventario.registrar_producto()
+        registro_prod.registrar_producto()
     elif opcion == '2':
         inventario.consultar_producto()
     elif opcion == '3':
