@@ -9,9 +9,9 @@ def mostrar_productos():
 # Verificar si la tabla tiene registros
     if resultados:
         print("Listado de productos registradas:")
+        print(f"{"Nombre":<20}{"Descripción":<22}{"Cantidad":<10}{"Precio":<10}{"Categoría":<15}")
         for registro in resultados:
-            print("Nombre:", registro[0], "Descripción:", registro[1],
-            "Cantidad:", registro[2], "Precio:", registro[3], "Categoría", registro[4])
+            print(f"{registro[0]:<20}{registro[1]:<22}{registro[2]:<10}{registro[3]:<10}{registro[4]:<15}")
     else:
         print("No hay registros en la tabla Personas.")
 # Cerrar la conexión
