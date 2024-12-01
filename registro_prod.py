@@ -1,10 +1,9 @@
 import sqlite3
 
 def registrar_producto():
-    # Conectar a la base de datos
-    conexion = sqlite3.connect("inventario_productos.db")
+    
+    conexion = sqlite3.connect("inventario_productos.db")  # Conectar a la base de datos
     cursor = conexion.cursor()
-
     # Crear la tabla Productos
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS Productos (
@@ -14,7 +13,7 @@ def registrar_producto():
         precio REAL,
         categoria TEXT
     )
-    ''')
+    ''')                                                     
 
     # Pedir los datos del producto
     nombre = input("Ingrese el nombre del producto: ").capitalize()
