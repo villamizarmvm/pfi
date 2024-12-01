@@ -1,7 +1,6 @@
 import sqlite3
 import registro_prod, mostrar_prod, buscar_prod, bajoStock_prod
 
-
 def actualizar_cant_prod():
     conexion = sqlite3.connect("inventario_productos.db")
     cursor = conexion.cursor()
@@ -38,7 +37,7 @@ def mostrar_menu():
         print("     5. Listar productos")
         print("     6. Reporte de bajo stock")
         print("     7. Salir")
-        opcion = input("Seleccione una opción: ")
+        opcion = input("\nSeleccione una opción (1-7): ")
 
         if opcion == '1':
             registro_prod.registrar_producto()
